@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"></script>  <style>
+    body {
+      background-image: url("assets/Background.jpg");
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .login-container .form-control {
+      border-radius: 4px;
+    
+    }
+
+    .login-container .btn-primary {
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container login-container">
+    <h2>Signup</h2>
+    <form>
+        <div class="form-group" style="margin-top: 20px;">
+            <label for="name">First Name:</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter first name" required>
+          </div>
+          <div class="form-group" style="margin-top: 20px;">
+            <label for="last">Last Name:</label>
+            <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" required>
+          </div>
+      <div class="form-group" style="margin-top: 20px;">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+      </div>
+      <div class="form-group" style="margin-top: 20px;">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+      </div>
+
+      <div class="form-group" style="margin-top: 20px;">
+        <label for="password">Confirm Password:</label>
+        <input type="password" class="form-control" id="confirm_password" placeholder="Enter password" required>
+      </div>
+      
+      <div class="form-group" style="margin-top: 20px;">
+        <button type="button" onclick="signup()" class="btn btn-primary">SignUP</button>
+      </div>
+      <p>Already Registered? <a href="login.html"> Login Here </a></p>
+    </form>
+  </div>
+
+</body>
+
+<script>
+   
+    function signup(){
+      let firstName = document.getElementById("firstName").value
+      let LastName = document.getElementById("LastName").value
+      let email = document.getElementById("email").value
+
+        let password = document.getElementById("password").value
+        let conf_password = document.getElementById("confirm_password").value
+        if (password != conf_password) {
+          alert("Passwords must be same")
+          return
+
+        }
+        if (!firstName) {
+          alert("First Name is required")
+          return
+        }
+        if (!LastName) {
+          alert("LastName is required")
+          return
+
+        }
+        if (!email) {
+          alert("email is required")
+          return
+
+        }
+
+        localStorage.setItem("id",1)
+
+        window.location.href = "dashboard.html"
+    }
+
+
+
+</script>
+</html>
