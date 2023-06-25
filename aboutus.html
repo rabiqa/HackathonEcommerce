@@ -1,38 +1,187 @@
-<div class="container p-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+  #services{
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-right: 20px;
+    background-color:rgb(230, 228, 228);
+    text-align: center;
+
+  }
+
+  .box{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+  }
+
+  .carousel{
+    border: 1px solid black;
+    margin-left: 350px;
+    margin-right: 20px;
+    margin-top: 30px;
+background-color: rgb(230, 228, 228);
+width: 50%;
+  }
+
+  .carousel p{
+    color: black;
+    text-align: center;
+   
+  }
+ 
+</style>
+
+</head>
+
+
+<body>
+   <!-- Navbar -->
+   <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: block;">
+        <div class="">
+            <div class="row">
+                <div class="col-md-4">
+                              <img src="images/logo.png">
+                </div>
+                <div class="col-md-5">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item ml-2" style="margin-left: 20px;">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                          </li>
+                          <li class="nav-item ml-2" style="margin-left: 20px;">
+                            <a class="nav-link active" href="aboutus.html">About Us</a>
+                          </li>
+                          <li class="nav-item" style="margin-left: 20px;">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                          </li>
+                          
+                        </ul>
+                       
+                      </div>
+                </div>
+                <div class="col-md-3" style="display: flex;">
+                    <form >
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style=" float:left">                      
+                    
+                    </form>
+                    <i class="fa-solid fa-cart-shopping" style="margin-top: 10px;margin-left: 5px;"></i>
+                   <a href="login.html"><i class="fa-solid fa-user" style="margin-top: 10px;margin-left: 15px; color: black;" ></i></a>
+                </div>
+            </div>
+          
+          
         </div>
       </nav>
+    </div>
+
+    <!-- about us -->
+    <div>
+      <img src="images/about.jpg" alt="">
+      <h3 style="margin-top: 20px; margin-left: 20px;">The Trusted Online Shopping Store in Pakistan</h3>
+      <p style="margin-top: 20px; margin-left: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, neque blanditiis error animi vero numquam, maxime aperiam eligendi nostrum reprehenderit optio eaque beatae illum. Labore accusantium tempora laborum rerum? Recusandae.</p>
+    </div>
+
+      <!-- our services -->
+<div class="row" id="services">
+      <div class="col md-3 box" >
+        <img src="images/cash.png" alt="" style="width: 60px;">
+        <h4>Cash On Delivery</h2>
       </div>
+      <div class="col md-3 box">
+        <img src="images/return.jfif" alt="" style="width: 85px;">
+        <h4>Return Policy</h2>
+      </div>
+      <div class="col md-3 box">
+        <img src="images/payment.jfif" alt="" style="width: 90px;">
+        <h4>Safe Payment</h2>
+      </div>
+      <div class="col md-3 box">
+        <img src="images/customer.jpeg" alt="" style="width: 50px;">
+        <h4>Customer services</h2>
+      </div>
+
+    </div>
+
+
+    <!-- reviews -->
+
+    <h2 style="text-align: center; margin-top: 30px; background-color:rgb(230, 228, 228) ;">Customer Reviews</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolore accusamus ex, aliquam excepturi maiores tempora consequatur debitis eveniet quas culpa consectetur dicta provident doloribus ipsa? Accusamus consequuntur cupiditate perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum fugiat hic tempora, adipisci aliquam nam, soluta possimus doloremque quibusdam deleniti voluptatibus mollitia consectetur iure labore esse tenetur vel in quasi?</p>
+        </div>
+        <div class="carousel-item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aut amet rem corrupti quaerat perspiciatis quis totam optio molestiae nam vitae commodi sequi at exercitationem dignissimos, earum, illum fuga praesentium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, mollitia officia consectetur tenetur cum neque, ab provident commodi fugiat facilis corrupti ut soluta recusandae iure deserunt eius? Fugit, iste quis!</p>
+        </div>
+        <div class="carousel-item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quas necessitatibus rem nam beatae consectetur quia esse laudantium. Quidem, corporis? Dolore quibusdam tenetur tempora doloremque repudiandae ab iste perferendis doloribus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, quas! Explicabo aspernatur, porro assumenda ullam enim atque perspiciatis culpa consequuntur ex dolorum vitae. Itaque, deserunt! Maxime omnis in iure aperiam?</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      
+        <!-- Footer -->
+        <div class="container" style="background-color: rgb(240, 227, 227); padding: 10px; margin-top: 20px;">
+          <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+             <div class="col-md-3">
+                 <img src="images/logo.png" alt="">
+                 <p style="margin-top: 10px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                 Voluptatum aliquid beatae provident magn.</p>
+             </div>
+             <div class="col-md-3" >
+                 <h4>SHOP</h4>
+                 <P>All collection</P>
+                 <p>Winter Edition</p>
+                 <p>Discount</p>
+             </div>
+             <div class="col-md-3">
+                 <h4>COMPANY</h4>
+                 <P>About Us</P>
+                 <p>Contact</p>
+                 <p>Affilates</p>
+             </div>
+             <div class="col-md-3">
+                 <h4>SUPPORT</h4>
+                 <P>FAQs</P>
+                 <p>Cookie Policy</p>
+                 <p>Terms of use</p>
+             </div>
+          </div>
+          <div class="row">
+             <div class="col-md-12" style="text-align: center;">
+                 <hr style="width: 90%; margin: auto;">
+                 <p style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+ 
+             </div>
+          </div>
+       </div>
+</body>
+</html>
+
+
+
+     
